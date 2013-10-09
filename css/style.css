@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'din16_normalregular';
+    src: url('../font/font_2-webfont.eot');
+    src: url('../font/font_2-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/font_2-webfont.woff') format('woff'),
+         url('../font/font_2-webfont.ttf') format('truetype'),
+         url('../font/font_2-webfont.svg#din16_normalregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+     font-family: 'din16_normalregular', sans-serif;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*----------------------------------------------------------------------------- 
+BODY 
+-----------------------------------------------------------------------------*/
+
+
+body {
+	/*border-top:200px solid lightpink;*/
+	font-family: Din, Helvetica, Arial, sans-serif;
+	line-height: 1.7; /* line-height is unit-less */
+	font-size: 12px;
+	background: url('../images/background.jpg');
+}
+
+#container #header h1{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	margin:0px;
+	height:0px;
+}
+
+#header .logo{
+	display:block;
+	width:50%;
+	margin:0 auto;
+}
+
+#main_content .pots {
+	width: 70%;
+	margin: 0 auto;
+}
+
+#main_content .pots img{
+	width:33%;
+	display:block;
+	float:left;
+}
+
+#main_content .pots img:hover{
+	opacity:.8;
+}
+
+
+.fourth{
+	margin-top: -8%;
+	margin-left: 14%;
+}
+
+.fifth{
+	margin-top: -8%;
+	margin-left: 2%;
+}
+
+#footer{
+	width:50%;
+	margin:0 auto;
+	text-align:center;
+	margin-top:-3%;
+	color:#52291c;
+}
+
+#footer a {
+	text-indent:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    height:34px;
+    width:34px;
+    background-image: url('../images/nav_social_sprite.png');
+    display:block;
+    float:left;
+    margin:1%;
+}
+
+#footer ul{
+	width:170px;
+	margin:0 auto;
+	padding:0px;
+	list-style:none;
+}
+
+#footer li {
+	width:100%;
+	margin:0 auto;
+
+}
+
+.facebook{
+	background-position:456px -3px;
+
+}
+
+.twitter{
+	background-position:54px -3px;
+}
+
+.instagram{
+	background-position:746px -3px;
+}
+
+.pinterest{
+	background-position:339px -3px;
+}
+
+.facebook:hover, .twitter:hover, .instagram:hover, .pinterest:hover{
+	opacity:.7;
+}
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (max-width:400px){
+	
+  #main_content .pots img{
+  	                      display:block;
+                          width:100%;
+                          margin: -7%, auto, 0 auto;
+                        }
+  #main_content .pots img.second, img.third, img.fourth, img.fifth{
+                        margin-top:-7%; 
+                      }                    
+
+  #header .logo {
+  	             width:95%;
+  	            }
+
+  .fourth, .fifth{
+				  margin-left:0px;
+				  margin-top:0px;
+                 }
+
+  #footer{
+           width:100%;
+         }
+
+  #footer a{
+  	         text-align:center;
+           }
+
+}
+
+/*Add in the webkit stuff for older browsers*/
+/*Add in the alt tags for images*/
+/*Add a logo in the tab*/
+
